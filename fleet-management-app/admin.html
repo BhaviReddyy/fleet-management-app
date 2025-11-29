@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <h1>Fleet Management</h1>
+        <!--Filters-->
+        <select id="filterCategory">
+                <option value="">Category (All)</option>
+                <option value="car">Car</option>
+                <option value="truck">Truck</option>
+                <option value="Bus">Bus</option>
+            </select>
+        <slect id="filterAvailability">
+            <option value="">Availability(All)</option>
+            <option value="unavailable">unavailable</option>
+        </slect>
+        <button id="clearFilter">clearFilter</button>
+    </nav>
+    <div class="container">
+        <!--sidebar-->
+        <aside class="sidebar">
+            <h2>Add Fleet</h2>
+            <input id="vehicleno" type="text" placeholder="Vehicle Number">
+            <select id="category">
+                    <option value="car">Car</option>
+                    <option value="truck">Truck</option>
+                    <option value="bus">Bus</option>
+                </select>
+            <input id="driver" type="text" placeholder="Driver Name">
+            <select id="availability">
+                    <option
+                value="available">Available</option>
+                    <option
+                value="unavailable">Unavailable</option>
+                </select>
+            <button id="addFleet">Add Fleet</button>
+        </aside>
+        <main id="fleetContainer"></main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

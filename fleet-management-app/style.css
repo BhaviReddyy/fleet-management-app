@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+
+/* Login page */
+
+.login-box {
+    width: 300px;
+    margin: 120px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.login-box input .login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* Navbar */
+
+nav {
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav select,
+nav button {
+    padding: 8px;
+}
+
+
+/* Layout */
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px #ccc;
+}
+
+.sidebar input,
+.sidebar slect,
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* Cards grid */
+
+#fleetContainer {
+    flex-grow: 1;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Vehicle card */
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #ccc;
+}
+
+.card button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+}
